@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  background: #05080f;
+  min-height: 100vh;
+  color: #e5e7eb;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  background: #0b0f19;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,0,0,.8);
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ff8800;
+}
+
+/* ================= TABLE ================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 14px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9ca3af;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+td {
+  padding: 16px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.03);
+  transition: 0.2s;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  padding: 7px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-add {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #052e16;
+}
+
+.btn-edit {
+  background: linear-gradient(135deg, #facc15, #eab308);
+  color: #422006;
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #450a0a;
+}
+
+.btn-back {
+  background: linear-gradient(135deg, #0ea5e9, #0ea5e9);
+  color: #020617;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(0.97);
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(2, 6, 23, 0.8);
+  color: #e5e7eb;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.2);
+}
