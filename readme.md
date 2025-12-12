@@ -1,9 +1,3 @@
-Berikut adalah **README.md lengkap**, dengan format **sama seperti contoh Sistem Manajemen Laundry**, tetapi **isinya disesuaikan 100% dengan project Manajemen Crypto milikmu**.
-
-Kamu tinggal **copy–paste** ke file `README.md`.
-
----
-
 # **Manajemen Crypto – Aplikasi Pengelolaan Aset Cryptocurrency**
 
 Aplikasi web untuk mengelola data aset cryptocurrency berbasis **PHP** dan **MySQL**.
@@ -13,33 +7,33 @@ Mendukung CRUD lengkap untuk mencatat **simbol**, **nama crypto**, **harga masuk
 
 # **Fitur Utama**
 
-### ✔ **CRUD Data Crypto**
+### **CRUD Data Crypto**
 
 * Tambah data aset crypto
 * Lihat detail aset
 * Edit aset
 * Hapus aset
 
-### ✔ **Autentikasi Pengguna**
+###  **Autentikasi Pengguna**
 
 * Register akun baru
 * Login dengan password terenkripsi
 * Session-based authentication
 * Logout
 
-### ✔ **Manajemen Aset**
+###  **Manajemen Aset**
 
 * Menyimpan simbol aset (ETH, BTC, dll.)
 * Menyimpan harga masuk aset
 * Menampilkan total alokasi dalam persen
 * Menampilkan kategori crypto (misal: Layer 1, Meme, DeFi, CEX, dll.)
 
-### ✔ **Keamanan**
+###  **Keamanan**
 
 * Password disimpan dengan `password_hash()`
 * Akses halaman hanya untuk user yang sudah login
 
-### ✔ **Tampilan Modern**
+###  **Tampilan Modern**
 
 * Dark mode sederhana
 * Tabel rapi menyerupai tampilan CoinStats
@@ -215,10 +209,10 @@ crypto_app/
 
 | Simbol | Nama         | Harga Masuk   | Alokasi | Kategori      |
 | ------ | ------------ | ------------- | ------- | ------------- |
-| ETH    | Ethereum     | Rp 45.000.000 | 30%     | Layer 1       |
-| BTC    | Bitcoin      | Rp 91.969.000 | 40%     | Proof-of-Work |
-| BNB    | Binance Coin | Rp 8.500.000  | 10%     | CEX Token     |
-| USDT   | Tether       | Rp 15.000     | 5%      | Stablecoin    |
+| ETH    | Ethereum     | $ 45.000.000 | 30%     | Layer 1       |
+| BTC    | Bitcoin      | $ 91.969.000 | 40%     | Proof-of-Work |
+| BNB    | Binance Coin | $ 8.500.000  | 10%     | CEX Token     |
+| USDT   | Tether       | $ 15.000     | 5%      | Stablecoin    |
 
 ---
 
@@ -236,8 +230,8 @@ crypto_app/
 
 Kelompok:
 
-* **Abdurrahman**
-* **Dkk.**
+Nama : **Zaid Abdurrahman Ar Rantisi**
+
 
 Mata Praktikum: **Pemrograman Web**
 Universitas: **Universitas Gunadarma**
