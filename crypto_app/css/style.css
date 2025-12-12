@@ -37,7 +37,7 @@ body {
   color: #ff8800;
 }
 
-/* ================= TABLE ================= */
+
 
 table {
   width: 100%;
@@ -64,7 +64,7 @@ tr:hover {
   transition: 0.2s;
 }
 
-/* ================= BUTTON ================= */
+
 
 .btn {
   padding: 7px 14px;
@@ -102,7 +102,7 @@ tr:hover {
   transform: scale(0.97);
 }
 
-/* ================= FORM ================= */
+
 
 .form-group {
   margin-bottom: 16px;
