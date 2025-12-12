@@ -2,13 +2,13 @@
 session_start();
 include 'koneksi.php';
 
-// JIKA SUDAH LOGIN, LANGSUNG MASUK INDEX
+
 if (isset($_SESSION['login'])) {
     header("location:index.php");
     exit;
 }
 
-// ================= PROSES REGISTER =================
+
 if (isset($_POST['register'])) {
 
     $nama     = mysqli_real_escape_string($koneksi, $_POST['nama']);
@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
     }
 }
 
-// ================= PROSES LOGIN =================
+
 if (isset($_POST['login'])) {
 
     $nama     = mysqli_real_escape_string($koneksi, $_POST['nama']);
