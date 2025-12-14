@@ -1,13 +1,9 @@
--- ============================================
--- DATABASE: manajemen_crypto
--- ============================================
+
 
 CREATE DATABASE IF NOT EXISTS manajemen_crypto;
 USE manajemen_crypto;
 
--- ============================================
--- TABLE: USERS
--- ============================================
+
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -18,9 +14,7 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ============================================
--- TABLE: CRYPTO ASSETS
--- ============================================
+
 
 CREATE TABLE crypto_assets (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -30,9 +24,7 @@ CREATE TABLE crypto_assets (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ============================================
--- TABLE: WALLETS
--- ============================================
+
 
 CREATE TABLE wallets (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -42,9 +34,7 @@ CREATE TABLE wallets (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
--- ============================================
--- TABLE: TRANSACTIONS
--- ============================================
+
 
 CREATE TABLE transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -59,9 +49,7 @@ CREATE TABLE transactions (
     FOREIGN KEY (crypto_id) REFERENCES crypto_assets(id)
 );
 
--- ============================================
--- TABLE: CRYPTO PRICE HISTORY
--- ============================================
+
 
 CREATE TABLE crypto_prices (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -71,9 +59,7 @@ CREATE TABLE crypto_prices (
     FOREIGN KEY (crypto_id) REFERENCES crypto_assets(id) ON DELETE CASCADE
 );
 
--- ============================================
--- TABLE: LOGIN LOGS (optional)
--- ============================================
+
 
 CREATE TABLE login_logs (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -83,9 +69,7 @@ CREATE TABLE login_logs (
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
--- ============================================
--- SEEDER DATA (DATA AWAL)
--- ============================================
+
 
 INSERT INTO users (nama,email,password,role) VALUES
 ('Admin','admin@crypto.com','123456','admin'),
