@@ -20,7 +20,14 @@ $data = mysqli_query($koneksi, "SELECT * FROM crypto_assets");
 <div class="container">
     <div class="header">
         <h2>Manajemen Crypto</h2>
+        
+        <!-- Tombol Tambah -->
         <a href="create.php" class="btn btn-add">+ Tambah Crypto</a>
+
+        <!-- Tombol Logout -->
+        <a href="logout.php" class="btn btn-delete" style="margin-left:10px;">
+            Logout
+        </a>
     </div>
 
     <table>
@@ -44,7 +51,7 @@ $data = mysqli_query($koneksi, "SELECT * FROM crypto_assets");
             <td><?= $d['total_alokasi'] ?>%</td>
             <td><?= $d['kategori'] ?></td>
             <td>
-                 <a href="read.php?id=<?= $d['id'] ?>" class="btn btn-back">Detail</a>
+                <a href="read.php?id=<?= $d['id'] ?>" class="btn btn-back">Detail</a>
                 <a href="update.php?id=<?= $d['id'] ?>" class="btn btn-edit">Edit</a>
                 <a href="delete.php?id=<?= $d['id'] ?>" class="btn btn-delete" onclick="return confirm('Yakin hapus?')">Hapus</a>
             </td>
